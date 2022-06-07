@@ -16,7 +16,7 @@ class MovieView extends StatelessWidget {
                   child: CircularProgressIndicator(),
                 )
               : state.status.isError
-                  ? const ErrorGameWidget()
+                  ? const ErrorGettingMoviesWidget()
                   : const SizedBox();
     });
   }
